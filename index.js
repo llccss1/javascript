@@ -91,38 +91,16 @@ switch (true) {
 */
 
 //ejercicio 3
-// var suma = 0;
-// do {
-//     var numero = prompt("Ingrese un numero: ");
-//     if (typeof(parseInt(numero)) === 'number') {
-//         suma += parseInt(numero);
-//     }
-//     document.write(numero);
-// } while (numero != null);
-// alert("la suma es: "+ suma);
-
-
-// var numero = parseInt(prompt("Ingrese un numero: "));
-// var suma = 0;
-// while (!isNaN(numero)) {    
-//     if (typeof(numero) != 'number') {
-//         alert("ingrese un numero");
-//     } else {
-//         suma += numero;
-//         numero = parseInt(prompt("Ingrese un numero: "));
-//     }    
-// }
-// alert("la suma es: "+ suma);
-
 var number = 0;
 do {
     current = prompt("Ingrese un numero: ");
-    n = number(current);
+    //document.write(current);
+    n = Number(current);
     if (n == current) {
         number += n;
-    } else {
+    } else if (current !== null){
         alert("ingrese un numero");
     }    
-} while(current) {
-    alert("la suma es: "+ number);
-}
+} while(current)
+alert("la suma es: "+ number);
+
